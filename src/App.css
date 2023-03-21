@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;700&display=swap");
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav {
+  width: 70%;
+  text-align: end;
+  margin: 2rem;
+}
+
+.nav a {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Sono", sans-serif;
+}
+
+.nav a:hover {
+  color: orangered;
+}
+
+h1 {
+  font-family: "Nerko One", cursive;
+  font-size: 50px;
+  color: rgb(60, 180, 191);
+}
+
+label {
+  font-family: "Sono", sans-serif;
+  font-size: 20px;
+}
+
+select {
+  font-size: 18px;
+}
+
+select:hover {
+  background-color: rgba(223, 180, 172, 0.461);
+}
+
+.quote-div {
+  margin-top: 1rem;
+  position: relative;
+}
+
+img {
+  width: 550px;
+  height: 570px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(250, 235, 215, 0.736);
+  width: 400px;
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 2.7rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
