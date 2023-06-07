@@ -44,12 +44,15 @@ export default function MessageForm({ getMessages }) {
 
         <label>Message: </label>
         <textarea
+          className="textarea"
           type="text"
           value={input?.text || ""}
           onChange={(e) => setInput({ ...input, text: e.target.value })}
         ></textarea>
 
-        <button type="submit">Submit</button>
+        <button className="button-1" type="submit">
+          Submit
+        </button>
       </form>
     </>
   );

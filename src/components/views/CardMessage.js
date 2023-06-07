@@ -25,19 +25,20 @@ export default function CardMessage({ message, i, getMessages }) {
   };
 
   return (
-    <div key={i}>
-      <button onClick={() => setIsPressed(!isPressed)}>
-        {message.title} from {message.name}
+    <div style={{ marginTop: "30px" }} key={i}>
+      <button className="cardMessage" onClick={() => setIsPressed(!isPressed)}>
+        {message.title} from {message.name} on {message.createdOn.slice(0, 10)}
       </button>
       {isPressed && (
         <div>
-          {message.text}{" "}
+          <p className="messageText">{message.text} </p>
           <button onClick={() => setIsButtonPressed(true)}>❌</button>
           <button onClick={() => setIsPressed(false)}>⬅️</button>
           {isButtonPressed && (
             <form onSubmit={handleDelete}>
               <input
-                placeholder="password"
+                className="inputPass"
+                placeholder="password to delete message"
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 required

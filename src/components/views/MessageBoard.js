@@ -20,7 +20,13 @@ export default function MessageBoard() {
     <>
       <h1>Message Board:</h1>
       <MessageForm getMessages={getMessages} />
-      <div style={{ display: "flex", width: "60%" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
         {messages.map((message, i) => (
           <CardMessage
             message={message}
