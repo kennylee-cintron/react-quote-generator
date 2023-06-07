@@ -80,3 +80,11 @@ h2 {
   color: orange;
   font-family: "Spline Sans Mono", monospace;
 }
+
+.messageCard {
+  padding: 2px 16px;
+  margin: 30px 10px;
+  border-radius: 10px;
+
+  border: #f6d478 5px solid;
+}

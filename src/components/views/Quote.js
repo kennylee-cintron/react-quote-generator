@@ -37,6 +37,7 @@ export default function Quote() {
 
   return (
     <>
+      <h1>Quotes to light us:</h1>
       <form className="dropdown">
         <label>Select a category:</label>
         <select onChange={handleChange} name="category" className="category">
