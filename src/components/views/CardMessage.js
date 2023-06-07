@@ -25,7 +25,7 @@ export default function CardMessage({ message, i, getMessages }) {
   };
 
   return (
-    <div style={{ marginTop: "30px" }} key={i}>
+    <div style={{ marginTop: "70px" }} key={i}>
       <button className="cardMessage" onClick={() => setIsPressed(!isPressed)}>
         {message.title} from {message.name} on {message.createdOn.slice(0, 10)}
       </button>

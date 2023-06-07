@@ -21,7 +21,11 @@ export default function MessageForm({ getMessages }) {
     <>
       <form
         onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column", width: "40%" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "40%",
+        }}
       >
         <label>Name: </label>
         <input
